@@ -1,0 +1,54 @@
+
+.promo__slider {
+    // background-color: #fff;
+    // border-radius: 50%;
+    min-height: 390px;
+    max-width: 650px;
+    margin: 0 15px;
+    box-shadow: 0 0 10px 2px #02242b;
+    border-radius: 20px;
+    margin-top: 15px;
+    &__slide {
+        margin: 0 auto;
+        outline: none;
+        text-decoration: none;
+        
+    }
+    &__photo {
+        overflow: hidden;
+    }
+    img {
+        max-width: 550px;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-top: 10px;
+        
+    }
+    &__name {
+        text-align: center;
+        margin: 0;
+        margin-top: 15px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+
+.slick-list {
+    overflow: hidden;
+    min-height: 390px;
+    max-width: 650px;
+}
+
+.slick-dots li button::before {
+    font-size: 40px;
+}
+
+
+
+
+
+
+
+

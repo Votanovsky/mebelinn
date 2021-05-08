@@ -1,0 +1,37 @@
+.header{
+    &__logo {
+        img {
+            max-width: 170px;
+            border-radius: 50px;
+            border: 2px solid #1F8295;
+        }
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #fff;
+        
+    }
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__link {
+        font-size: 17px;
+        font-weight: 400;
+        margin-left: 70px;
+        color: #fff;
+        opacity: 1;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:hover {
+            color: #fff;
+            opacity: 0.7;
+        }
+    }
+}
+

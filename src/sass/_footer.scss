@@ -1,0 +1,71 @@
+.footer {
+    background: linear-gradient( to top, #022127,#074753, );
+    padding: 25px 20px;
+    // &_two {
+    //     // margin-top: 10px;
+    // }
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+        box-shadow: 0 0 5px  #02272e;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    &__descr {
+        font-size: 17px;
+        font-weight: 400;
+        color: #fff;
+    }
+    &__maps {
+        margin-top: 15px;
+        width: 400px;
+        height: 250px;
+        box-shadow: 0 0 25px 10px #02272e;
+        iframe {
+            border-radius: 10px;
+        }
+    }
+    &__wrapper_two {
+        display: flex;
+    }
+    &__contacts {
+        font-size: 17px;
+        font-weight: 400;
+        color: #fff;
+        padding-left: 7px;
+        &__tittle {
+            font-weight: 700;
+        }
+        &__number {
+            margin-top: 20px;
+        }
+        &__homenumber {
+            margin-top: 20px;
+        }
+        &__mail {
+            margin-top: 20px;
+        }
+        &__society {
+            margin-top: 70px;
+            &__vk {
+                margin-left: 10px;
+                img {
+                    border-radius: 19%;
+                }
+            }
+        }
+    }
+    // &__brand {
+    //     margin-top: 140px;
+    //     display: block;
+    //     &__descr {
+    //         margin-top: 20px;
+    //         font-size: 17px;
+    //         font-weight: 400;
+    //         color: #fff;
+    //     }
+    //     &__logo {
+    //         margin-left: 160px;
+    //     }
+    // }
+}

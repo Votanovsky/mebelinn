@@ -1,0 +1,39 @@
+.filter {
+    &__item {
+        display: inline-block;
+        cursor: pointer;
+        font-size: 11px;
+        font-weight: 400;
+        margin-right: 15px;
+        color: #fff;
+        text-transform: uppercase;
+        width: auto;
+        height: auto;
+        padding: 3px 5px;
+        background-color: #076c7ec7;
+        border-radius: 7px;
+        
+        &:hover {
+            color: #074753;
+            // text-decoration: underline;
+            background-color: #3f8e9c34;
+            transition: .6s;
+        }
+        &:active {
+            color: #074753;
+        }
+    }
+    &__wrapper {
+        margin: 0;
+        display: block;
+        padding-bottom: 14px;
+    }
+    
+}
+
+
+
+.hide {
+    display: none;
+    
+}

@@ -1,0 +1,596 @@
+@media (max-width:1200px) {
+    .promo {
+        padding: 11px 20px 20px 20px;
+    }
+
+    .catalog {
+        &__link {
+            margin-bottom: 10px;
+        }
+    }
+    
+}
+@media (max-width:1069px) {
+    .header {
+        &__link {
+            font-size: 16px;
+            margin-left: 65px;
+        }
+    }
+}
+
+@media (max-width:991px) {
+
+    .promo {
+        padding: 11px 20px 20px 20px;
+    }
+
+    .header {
+        &__link {
+            font-size: 15px;
+            margin-left: 50px;
+        }
+    }
+    .promo__slider {
+        max-height: 204px;
+        max-width: 481px;
+        margin: 0 15px;
+        img {
+            width: 100%;
+        }
+    }
+    
+    .advantages {
+        .advantages__tittle {
+            font-size: 30px;
+        }
+        .advantages__item {
+            max-width: 200px;
+            img {
+                max-width: 130px;
+            }
+            &__tittle {
+                font-size: 14px;
+            }
+            &__descr {
+                font-size: 11px;
+            }
+        }
+    }
+
+    div.catalog__tittle {
+        font-size: 30px;
+    }
+    div.catalog__descr {
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width:769px) {
+    .header {
+        &__menu {
+            padding-bottom: 1px;
+        }
+        &__link {
+            font-size: 12px;
+            margin-left: 25px;
+        }
+        &__logo {
+            img {
+                max-width: 70px;
+            }
+        }
+    }
+
+    .promo {
+        &__content {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+        &__tittle {
+            font-size: 30px;
+            text-align: center;
+        }
+        &__subtittle {
+            text-align: center;
+        }
+        &__descr {
+            margin-bottom: 20px;
+            margin: 0 auto;
+            position: relative;
+        }
+        &__contact {
+            margin: 0 auto;
+            margin-top: 80px;
+        }
+        &__slider {
+            max-width: 570px;
+            margin: 0 auto;
+            &__name {
+                margin: 0;
+            }
+        }
+    }
+    .button {
+        margin-top: 25px;    
+        position: absolute;
+        left: 130px;
+    }
+
+    div.catalog__descr {
+        font-size: 13px;
+    }
+    
+    
+}
+
+
+@media(max-width:635px) {
+    
+    .header {
+        &__logo {
+            position: absolute;
+            top: 60px;
+            left: 87px;
+            img {
+                max-width: 130px;
+            }
+        }
+        &__menu {
+            position: fixed;
+            top: -200%;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background-color: #05333b;
+            opacity: .98;
+            border-left: 3px solid rgb(255, 255, 255);
+            z-index: 2;
+        }
+        &__navigation {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: absolute;
+            top: 120px;
+            left: 30px;
+        }
+        &__link {
+            margin: 0;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        &__burger { 
+            z-index: 3;
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 20px;
+            margin-top: 5px;
+            ::after {
+                bottom: 0;
+                content: '';
+                background-color:#fff;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                left: 0;
+                bottom: -9px;
+                transition: all 0.4s ease 0s;
+            }
+            ::before {
+                content: '';
+                background-color:#fff;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                left: 0;
+                top: -9px;
+                transition: all 0.4s ease 0s;
+            }
+            span {
+                background-color:#fff;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                top: 8px;
+                transition: all 0.4s ease 0s;
+            }
+            
+        }
+    }
+    
+    .header__burger_active {
+        ::before {
+            content: '';
+            transform: rotate(-45deg);
+            top: 0px;
+        }
+        ::after {
+            content: '';
+            transform: rotate(45deg);
+            bottom: 0px;
+        }
+        
+    }
+
+    // .header__burger_active span {
+    //     transform: scale(0);
+    // }
+    
+    .header__menu.header__burger_active {
+            top: 0;
+            transition: all 0.6s ease 0s;
+    }
+    .promo__slider {
+        margin-top: 18px;
+        max-width: 400px;
+        max-height: 100px;
+    &__photo {
+        max-width: auto;
+        max-height: auto;
+    }
+    &__name {
+        font-size: 12px;
+        }
+    }
+    div.catalog__descr {
+        font-size: 8px;
+    }
+
+    // страница каталога и модальные окна \\\\\\\\\\\\\\\\\\\\
+    .modulnie__header__wrapper {
+        flex-direction: column;
+        span {
+            justify-content: center;
+            // align-items: flex-start;
+        }
+    }
+
+    a.modulnie__header__link {
+        margin-top: 10px;
+    }
+
+    section.modulnie__header {
+        padding: 10px 5px 5px 15px;;
+    }
+
+    div.modulnie__catalog__name {
+        font-size: 13px;
+    }
+
+    button.modulnie__catalog__button {
+        font-size: 12px;
+        width: 56px;
+        height: 22px;
+    }
+    button.modulnie__catalog__descr {
+        font-size: 12px;
+    }
+
+
+    li.filter__item {
+        font-size: 9px;
+    }
+}
+
+@media(max-width:420px) {
+    .promo {
+        height: 500px;
+        &__tittle {
+            font-size: 24px;
+        }
+        &__contact {
+            margin-bottom: 10px;
+        }
+    }
+    .promo__slider {
+            max-width: 275px;
+            min-height: 183px;
+        &__photo {
+            max-width: 275px;
+            min-height: 183px;
+        }
+        &__name {
+            font-size: 12px;
+        }
+    }
+    .slick-dots li button:before  {
+        font-size: 20px;
+    }
+    .slick-dots {
+        bottom: -42px;
+    }
+    .header {
+        &__link {
+            font-size: 15px;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+        &__logo {
+            position: absolute;
+            top: 60px;
+            left: 50px;
+            margin-top: 0;
+            img {
+                max-width: 90px;
+            }
+        }
+    }
+    .button {
+        &_main {
+            left: 84px;
+        }
+    }
+
+    .advantages {
+        padding: 20px 0;
+        .advantages__tittle {
+            font-size: 22px;
+        }
+        .advantages__item {
+            max-width: 150px;
+            img {
+                max-width: 100px;
+            }
+            &__tittle {
+                font-size: 12px;
+            }
+            &__descr {
+                font-size: 11px;
+            }
+        }
+    }
+    
+    // КАТАЛОГ//////////////////////////////////////////
+
+
+    div.catalog__tittle {
+        font-size: 22px;
+    }
+    ul.catalog__tabs {
+        margin-top: 30px;
+    }
+
+    // модальные окна и страница каталога \\\\\\\\\\\\\\\\\\\\\\\\
+    img.modal__img {
+        max-width: 280px;
+    }
+    img.modal__img_two {
+        max-width: 280px;
+    }
+    div.modal__tittle {
+        font-size: 15px;
+    }
+    div.modal__descr_parametr {
+        font-size: 10px;
+    }
+    button.modulnie__catalog__descr {
+        font-size: 8px;
+    }
+    div.modulnie__catalog__name {
+        font-size: 8px;
+    }
+    button.modulnie__catalog__button {
+        font-size: 9px;
+        width: 48px;
+        height: 19px;
+    }
+    a.modulnie__header__link {
+        font-size: 10px;
+        margin-top: 7px;
+    }
+
+    form.feed-form {
+        max-width: 260px;
+    }
+    button.buttonnn_submit {
+        height: 45px;
+        font-size: 13px;
+    }
+
+    // div.modulnie__catalog__item {
+    //     img {
+    //         height: 48px;
+    //     }
+    // }
+
+
+
+    a.pageup {
+        bottom: 20px;
+        right: 20px;
+    }
+
+}
+@media(max-width:400px) {
+    .advantages {
+        .advantages__tittle {
+            font-size: 18px;
+        }
+        .advantages__item {
+            max-width: 115px;
+            img {
+                max-width: 70px;
+            }
+            &__tittle {
+                font-size: 9px;
+            }
+            &__descr {
+                font-size: 9px;
+            }
+        }
+    }
+    div.catalog__tittle {
+        font-size: 18px;
+    }
+    
+    .catalog {
+        &__tab {
+            max-width: 135px;
+        }
+    }
+
+}
+@media(max-width:380px) {
+    .button_main {
+        left: 56px;
+    }
+
+    img.modal__img {
+        max-width: 240px;
+    }
+    img.modal__img_two {
+        max-width: 240px;
+    }
+}
+
+@media(max-width:320px) {
+    .button_main {
+        left: 34px;
+        margin-top: 13px;
+    }
+    .header__link {
+        font-size: 12px;
+    }
+    .header__logo {
+        top: 25px;
+        left: 36px;
+    }
+    .header__navigation {
+        top: 90px;
+    }
+    .advantages {
+        .advantages__tittle {
+            font-size: 18px;
+        }
+        .advantages__item {
+            max-width: 115px;
+            img {
+                max-width: 70px;
+            }
+            &__tittle {
+                font-size: 9px;
+            }
+            &__descr {
+                font-size: 9px;
+            }
+        }
+    }
+
+    img.modal__img {
+        max-width: 220px;
+    }
+    img.modal__img_two {
+        max-width: 220px;
+    }
+}
+
+// адаптив для футтера\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+@media(max-width:768px) {
+    div.footer__contacts {
+        font-size: 15px;
+    }
+
+}
+
+@media(max-width:635px) {
+    div.footer__maps {
+        width: 300px;
+        height: 200px;
+    }
+    .footer__img {
+        width: 40px;
+    }
+    div.footer__descr {
+        font-size: 14px;
+    }
+    div.footer__contacts {
+        font-size: 12px;
+    }
+    
+}
+
+@media(max-width:540px) {
+    div.footer__maps {
+        width: 240px;
+        height: 180px;
+    }
+    div.footer__descr {
+        font-size: 9px;
+    }
+    div.footer__contacts {
+        font-size: 8px;
+    }
+    div.footer__contacts__society {
+        margin-top: 62px;
+    }
+}
+
+@media(max-width:430px) {
+    .footer__img {
+        width: 30px;
+    }
+    div.footer__maps {
+        max-width: 190px;
+        max-height: 130px;
+    }
+    div.footer__contacts__society {
+        margin-top: 34px;
+    }
+    div.footer__contacts {
+        font-size: 7px;
+    }
+    div.footer__descr {
+        font-size: 8px;
+    }
+}
+@media(max-width:335px) {
+    div.footer__contacts {
+        font-size: 6px;
+    }
+    .footer__img {
+        width: 20px;
+    }
+    div.footer__maps {
+        max-width: 160px;
+        max-height: 110px;
+        
+    }
+    div.footer__contacts__society {
+        margin-top: 27px;
+    }
+
+
+    // модальные окна \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+    form.feed-form {
+        max-width: 190px;
+        input {
+            font-size: 11px;
+            height: 43px;
+            margin-bottom: 12px;
+        }
+    }
+    div.modal__tittle {
+        font-size: 13px;
+    }
+    div.modal__descr {
+        font-size: 10px;
+    }
+    button.buttonnn_submit {
+        height: 33px;
+        font-size: 12px;
+    }
+
+
+}
+// @media(max-width:335px) {
+//     .footer__img {
+//         width: 28px;
+//     }
+// }

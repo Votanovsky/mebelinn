@@ -1,0 +1,117 @@
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.56)
+}
+.overlay_two  {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.26);
+}
+
+.modulnie__catalog__parametr {
+    display: none;
+    font-size: 13px;
+    font-weight: 300;
+    color: rgb(36, 35, 35);
+}
+
+.modulnie__catalog__img__modal {
+    display: none;
+    
+}
+.modulnie__catalog__img__modal_two {
+    display: none;
+}
+
+.modulnie__catalog__parametr_price {
+    display: none;
+}
+
+
+
+
+
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    min-height: auto;
+    max-width: 380px;
+    background-color: #f2f2f2;
+    padding: 20px 20px 20px 20px;
+    &__close {
+        position: absolute;
+        top: -20px;
+        right: -30px;
+        font-size: 41px;
+        line-height: 21px;
+        color: #066475;
+        cursor: pointer;
+    }
+    &__tittle {
+        color: #000;
+        font-size: 17px;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__img {
+        max-width: 350px;
+        max-height: 280px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        &_two {
+            max-width: 350px;
+            max-height: 280px;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+    }
+    &__descr {
+        color: #000;
+        font-size: 13px;
+        font-weight: 400;
+        text-align: center;
+        &_price {
+            color: #013641;
+            font-size: 15px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 3px;
+        }
+        &__parametr {
+            color: rgb(22, 21, 21);
+            font-size: 13px;
+            font-weight: 300;
+        }
+    }
+    &_mini {
+        min-height: 140px;
+    }
+    .error {
+        border: 0.8px solid #165d6b;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    label.error {
+        border: none;
+    }
+}
+#consultation, #order, #thanks {
+    display: none;
+}
+
+#consultation {
+    display: block;
+}
